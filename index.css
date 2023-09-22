@@ -1,0 +1,35 @@
+.footer {
+    background: #1b2020 ;
+    background-size: cover;
+}
+
+.page-footer {
+    font-weight: 900;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 20px;
+}
+
+.footer-links a img {
+    width: 50px;
+    height: 50px;
+}
+
+.footer div {
+    color: white;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+.miDiv {
+    width: 80px;
+}
+
+.miDiv img {
+    max-width: 100%;
+}
