@@ -3,7 +3,7 @@ import logoInstagram from "../assets/img/instagram.png";
 import logoTwitter from "../assets/img/twitter.png";
 import logoLinkedin from "../assets/img/linkedin.png";
 
-export default function Footer() {
+function Footer() {
     return (
         <footer className="page-footer font-small pt-4 footer">
             <div className="container-fluid text-center text-md-left pt-5 mt-5">
@@ -35,20 +35,12 @@ export default function Footer() {
                 </div>
             </div>
             <div className="footer-copyright text-center py-3">
-                © 2023 Copyright
-                <a href="">cryptoexchange.com</a>
+                © 2023 Copyright |
+                <a href=""> cryptoexchange.com</a>
             </div>
         </footer>
 
     );
 };
 
-
-/* 
-const Footer = () => {
-    return(
-        <>
-        </>
-    );
-};  
-*/
+export default Footer;
