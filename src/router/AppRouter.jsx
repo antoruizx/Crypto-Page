@@ -7,6 +7,9 @@ import CoinPage from "../pages/CoinPage";
 import ErrorPage from "../pages/ErrorPage";
 import CoinTable from "../components/CoinTable";
 import CoinCard from "../components/CoinCard";
+import RequireAuth from "./RequireAuth";
+import AdminPanelPage from "../pages/AdminPanelPage";
+import SignInPage from "../pages/SignInPage";
 
 
 
@@ -21,6 +24,8 @@ function AppRouter () {
                     <Route index element={<CoinTable />} />
                     <Route path=":id" element={<CoinCard />} />
                 </Route>
+                <Route path="signin" element={<SignInPage />} />
+                <Route path="adminpanel" element={<RequireAuth isLogged={false} children={<AdminPanelPage />} />} />
                 <Route path="*" element={<ErrorPage />} />
             </Routes>
             <Footer />

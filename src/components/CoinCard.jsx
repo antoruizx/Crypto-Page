@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import { useNavigate, useOutletContext, useParams } from "react-router-dom";
 import { getCoin } from "../services/CoinService";
 import numeral from "numeral";
 
@@ -7,10 +7,14 @@ function CoinCard() {
     const [coin, setCoin] = useState({});
     const {id} = useParams();
     const navigate = useNavigate();
-    useEffect(() => {
+    /*useEffect(() => {
         const fetchData = async () => setCoin(await getCoin(id).then(response => response.data.data));
         fetchData();
-    }, [])
+    }, [])*/
+    const coins = useOutletContext();
+    useEffect(() => {
+        setCoin(coins.find( coin => coin.id == id));
+    },[])
 
     return (
         <>

@@ -1,15 +1,10 @@
-import {useEffect, useState} from "react";
-import {getCoins} from "../services/CoinService";
 import numeral from "numeral";
 import {Link, useOutletContext} from "react-router-dom"
-import CoinSymbol from "./CoinSymbol";
+
 
 function CoinTable() {
-    const [coins, setCoins] = useState([{}]);
-    useEffect(() => {
-        const fetchData = async () => setCoins(await getCoins().then(response => response.data.data));
-        fetchData();
-    });
+
+    const coins = useOutletContext();
 
     return (
         <table className="table">
