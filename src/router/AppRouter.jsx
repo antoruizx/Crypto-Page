@@ -2,7 +2,6 @@ import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import HomePage from "../pages/HomePage";
 import AboutUsPage from "../pages/AboutUsPage";
 import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
 import CoinPage from "../pages/CoinPage";
 import ErrorPage from "../pages/ErrorPage";
 import CoinTable from "../components/CoinTable";
@@ -10,6 +9,7 @@ import CoinCard from "../components/CoinCard";
 import RequireAuth from "./RequireAuth";
 import AdminPanelPage from "../pages/AdminPanelPage";
 import SignInPage from "../pages/SignInPage";
+import Footer2 from "../components/Footer2";
 
 
 
@@ -28,7 +28,7 @@ function AppRouter () {
                 <Route path="adminpanel" element={<RequireAuth isLogged={false} children={<AdminPanelPage />} />} />
                 <Route path="*" element={<ErrorPage />} />
             </Routes>
-            <Footer />
+            <Footer2 />
         </Router>
     );
 };
