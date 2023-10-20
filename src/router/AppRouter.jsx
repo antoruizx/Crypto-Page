@@ -10,6 +10,7 @@ import RequireAuth from "./RequireAuth";
 import AdminPanelPage from "../pages/AdminPanelPage";
 import SignInPage from "../pages/SignInPage";
 import Footer2 from "../components/Footer2";
+import Products from "../pages/Products";
 
 
 
@@ -20,10 +21,7 @@ function AppRouter () {
             <Routes>
                 <Route path="" element={<HomePage />}  />
                 <Route path="aboutUs" element={<AboutUsPage />} />
-                <Route path="coins" element={<CoinPage />} >
-                    <Route index element={<CoinTable />} />
-                    <Route path=":id" element={<CoinCard />} />
-                </Route>
+                <Route path="products" element={<Products />} />
                 <Route path="signin" element={<SignInPage />} />
                 <Route path="adminpanel" element={<RequireAuth isLogged={false} children={<AdminPanelPage />} />} />
                 <Route path="*" element={<ErrorPage />} />

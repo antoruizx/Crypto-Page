@@ -15,7 +15,7 @@ export default function Navbar() {
                             <Link className="nav-link" to={""} >Home</Link>
                         </li>
                         <li class="nav-item">
-                            <Link className="nav-link" to={"/coins"} >Products</Link>
+                            <Link className="nav-link" to={"/products"} >Products</Link>
                         </li>
                         <li class="nav-item">
                             <Link className="nav-link" to={"/aboutUs"} >About us</Link>
