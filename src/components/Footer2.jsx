@@ -8,8 +8,20 @@ import linkedin from '../assets/img/linkedin.png';
 const Footer = () => {
     return (
         <div className="footer">
-            <div className="sb__footer section__padding">
+            <div className="sb__footer section__padding"> 
+            <div className="sb_footer-links_div">
+                        <h4>Coming soon</h4>
+                        <div className="socialmedia">
+                            <p><img src={fb}
+                                    alt="logofb"/></p>
+                            <p><img src={twitter}
+                                    alt="logotw"/></p>
+                            <p><img src={linkedin}
+                                    alt="logolk"/></p>
+                        </div>
+                    </div>
                 <div className="sb__footer-links">
+                    
                     <div className="sb__footer-links_div">
                         <h4>Products</h4>
                         <a href="/remeras">
@@ -41,17 +53,6 @@ const Footer = () => {
                         </a>
                     </div>
 
-                    <div className="sb_footer-links-div">
-                        <h4>Coming soon</h4>
-                        <div className="socialmedia">
-                            <p><img src={fb}
-                                    alt="logofb"/></p>
-                            <p><img src={twitter}
-                                    alt="logotw"/></p>
-                            <p><img src={linkedin}
-                                    alt="logolk"/></p>
-                        </div>
-                    </div>
                 </div>
 
 
