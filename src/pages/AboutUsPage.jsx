@@ -30,7 +30,7 @@ const AboutUsPage = () => {
                         <div className="tab-content">
                             {/* About Content */}
                             <div className={toggleTab === 1 ? "content active-content": "content"}>
-                                <h2>My Story</h2>
+                                <h2>Our Story</h2>
                                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur doloremque ullam, delectus necessitatibus eos possimus culpa cupiditate, iste ea debitis, molestiae dolores! Odio molestiae esse nisi facere iure eaque. Laboriosam!</p>
                                 <h3>We're ...</h3>
                                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi numquam laboriosam laborum delectus provident est voluptate perferendis fugit, minus excepturi odio, vitae officiis labore corrupti iure at vel, iste dolorem.</p>
