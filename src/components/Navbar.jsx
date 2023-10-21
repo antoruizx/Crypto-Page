@@ -21,7 +21,7 @@ export default function Navbar() {
                             <Link className="nav-link" to={"/aboutUs"} >About us</Link>
                         </li>
                         <li class="nav-item">
-                            <Link className="nav-link" to={"/contact"} >Contact</Link>
+                            <Link className="nav-link" to={"/contactUs"} >Contact Us</Link>
                         </li>
                     </ul>
                 </div>
