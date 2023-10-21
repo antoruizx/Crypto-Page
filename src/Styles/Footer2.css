@@ -42,7 +42,7 @@ a {
 }
 
 .socialmedia img {
-    width: 30%;
+    width: 25%;
 }
 
 .sb__footer-links_div h4 {
@@ -83,6 +83,7 @@ hr {
     line-height: 15px;
     color: rgb(255,255,255);
     font-weight: 600;
+    text-align: center;
 }
 
 @media screen and (max-width: 850px) {
