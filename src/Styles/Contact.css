@@ -1,0 +1,42 @@
+
+* {
+    box-sizing: border-box;
+}
+form {
+    display: block;
+    background-color: #fff;
+    box-shadow: 1px 1px 3px 2px #ddd;
+    margin: 40px auto;
+    max-width: 600px;
+    max-height: 700px;
+    padding: 25px 40px;
+}
+
+form input, textarea {
+    display: flex;
+    flex-direction: column;
+}
+
+form input, textarea {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 15px auto;
+    padding: 8px;
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+}
+
+form span {
+    color: rgb(116, 169, 37);
+}
+
+form button {
+    height: 30px;
+    width: 80px;
+    align-items: center;
+    border: none;
+    background-color: rgb(116, 169, 37);
+    color: #fff;
+    cursor: pointer;
+}
