@@ -23,13 +23,9 @@ export default function Navbar() {
                         <li class="nav-item">
                             <Link className="nav-link" to={"/contactUs"} >Contact Us</Link>
                         </li>
-                        <li class="boton justify-content-end">
-                            <Link className="nav-link" to={""} >Home</Link>
-                        </li>
                     </ul>
                     <div className="boton justify-content-end">
                     <button type="button" class="btn btn-outline-success">LogIn/SignUp</button>
-                    
                     </div>
                 </div>
             </div>

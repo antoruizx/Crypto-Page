@@ -3,7 +3,6 @@ import Carousel from "react-bootstrap/Carousel";
 import '../Styles/HomePage.css';
 import Img1 from '../assets/img/img1.jpg';
 import Img2 from '../assets/img/img2.jpg';
-import Img3 from '../assets/img/img3.jpg';
 import Img4 from '../assets/img/img4.jpg';
 import {Col, Container, Row} from "react-bootstrap";
 
