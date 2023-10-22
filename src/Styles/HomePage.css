@@ -1,0 +1,23 @@
+.carousel-indicators [data-bs-target] {
+    border-radius: 100%;
+    width: 10px;
+    height: 10px;
+}
+.align-items-center {
+    align-items: center !important;
+}
+.justify-content-center {
+    justify-content: center !important;
+}
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1*var(--bs-gutter-y));
+    margin-right: calc(-0.5*var(--bs-gutter-x));
+    margin-left: calc(-0.5*var(--bs-gutter-x));
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
