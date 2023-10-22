@@ -6,7 +6,8 @@ function SignInPage() {
         <input type="text" name="" id="" />
         <label htmlFor="">Password</label>
         <input type="password" />
-        <button className='btn btn-primary'>Login</button>
+        <button type="button" class="btn btn-success">Success</button>
+
     </form>
   );
 }
