@@ -24,32 +24,32 @@ const Footer = () => {
                     
                     <div className="sb__footer-links_div">
                         <h4>Products</h4>
-                        <a href="/remeras">
-                            <p>Remeras</p>
+                        <a href="/t-shirts">
+                            <p>T-shits</p>
                         </a>
-                        <a href="/buzos">
-                            <p>Buzos</p>
+                        <a href="/hoodies">
+                            <p>Hoodies</p>
                         </a>
-                        <a href="/Accesorios">
-                            <p>Accesorios</p>
+                        <a href="/accesories">
+                            <p>Accesories</p>
                         </a>
                     </div>
                     <div className="sb__footer-links_div">
                         <h4>About Us</h4>
-                        <a href="/quienessomos">
-                            <p>¿Quienes somos?r</p>
+                        <a href="/aboutus">
+                            <p>About Us</p>
                         </a>
-                        <a href="/ubicacion">
-                            <p>Ubicación</p>
+                        <a href="/ubication">
+                            <p>Ubication</p>
                         </a>
                         <a href="/testimonios">
-                            <p>Testimonios</p>
+                            <p>Testimonials</p>
                         </a>
                     </div>
                     <div className="sb__footer-links_div">
                         <h4>Contact</h4>
                         <a href="/employer">
-                            <p>RRSS</p>
+                            <p>SSNN</p>
                         </a>
                     </div>
 
@@ -60,10 +60,10 @@ const Footer = () => {
                     <hr/>
                     <div className="sb__footer-copyright">
                         <p>
-                            ©{
+                            © {
                             new Date().getFullYear()
-                        }
-                            Nadia Antonella Ruiz - Proyecto Final FullStack. All right reserved.
+                        } All right reserved |
+                             Nadia Antonella Ruiz - FullStack Final Project.
                         </p>
                     </div>
                 </div>
