@@ -3,7 +3,7 @@ import "../Styles/Navbar.css";
 
 export default function Navbar() {
     return (
-        <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary text-center" data-bs-theme="dark">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">Reed</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
