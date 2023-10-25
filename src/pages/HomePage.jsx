@@ -4,7 +4,7 @@ import '../Styles/HomePage.css';
 import Img1 from '../assets/img/img1.jpg';
 import Img2 from '../assets/img/img2.jpg';
 import Img4 from '../assets/img/img4.jpg';
-import {Col, Container, Row, Card} from "react-bootstrap";
+import { Col, Container, Row, Card } from "react-bootstrap";
 import Card1 from '../assets/img/card1.jpg';
 import Card2 from '../assets/img/card2.jpg';
 import Card3 from '../assets/img/card3.jpg';
@@ -62,7 +62,7 @@ const HomePage = () => {
             </div>
             <hr/>
             <h1 className="text-center">Trends
-                <span class="badge bg-secondary">New</span>
+                <span className="badge bg-secondary">New</span>
             </h1>
             <Row xs={1}
                 md={3}

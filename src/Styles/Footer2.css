@@ -11,6 +11,9 @@
     flex-direction: column;
 }
 
+.img-brand {
+    max-width: 40px;
+}
 
 .sb__footer-links {
     display: flex;
