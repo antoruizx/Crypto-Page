@@ -1,20 +1,34 @@
 import '../Styles/SignInPage.css';
+import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
 
 
 function SignInPage() {
-  
-  return (
-    <form>
-        <label>Username</label>
-        <input type="text" name="" id="" />
-        <label htmlFor="">Password</label>
-        <input type="password" />
-        <button type="button" className="btn btn-success">Login</button>
-    </form>
-        //recordarme
-        //olvido contraseña
-        //ingresar con google
-  );
+
+    return (
+        <Form>
+            <Form.Group className="mb-3" controlId="formBasicName">
+                <Form.Label>Name</Form.Label>
+                <Form.Control type="name" placeholder="Enter your name"/>
+            </Form.Group>
+
+            <Form.Group className="mb-3" controlId="formBasicUsername">
+                <Form.Label>Username</Form.Label>
+                <Form.Control type="username" placeholder="Enter your username"/>
+            </Form.Group>
+
+            <Form.Group className="mb-3" controlId="formBasicPassword">
+                <Form.Label>Password</Form.Label>
+                <Form.Control type="password" placeholder="Enter your password"/>
+            </Form.Group>
+            <Form.Group className="mb-3" controlId="formBasicCheckbox">
+                <Form.Check type="checkbox" label="Remember me"/>
+            </Form.Group>
+            <div>
+                <a href="/" type="button" className="btn btn-primary">Signin</a>
+            </div>
+        </Form>
+    );
 }
 
 export default SignInPage;

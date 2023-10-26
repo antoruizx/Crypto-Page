@@ -11,7 +11,7 @@ import SignInPage from "../pages/SignInPage";
 import Footer2 from "../components/Footer2";
 import Products from "../pages/Products";
 import { ContactUs } from "../pages/ContactUs";
-import Login from "../Login";
+import Login from "../pages/Login";
 
 
 
