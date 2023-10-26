@@ -25,7 +25,7 @@ export default function Navbar() {
                             <Link className="nav-link" to={"/contactUs"} >Contact Us</Link>
                         </li>
                         <li className="nav-item boton">
-                            <Link className="nav-link" to={"/signin"} >Login/Signin</Link>
+                            <Link className="nav-link" to={"/login"} >Login/Signin</Link>
                         </li>
                     </ul>               
                 </div>

@@ -11,6 +11,7 @@ import SignInPage from "../pages/SignInPage";
 import Footer2 from "../components/Footer2";
 import Products from "../pages/Products";
 import { ContactUs } from "../pages/ContactUs";
+import Login from "../Login";
 
 
 
@@ -26,6 +27,7 @@ function AppRouter () {
                 <Route path="adminpanel" element={<RequireAuth isLogged={false} children={<AdminPanelPage />} />} />
                 <Route path="*" element={<ErrorPage />} />
                 <Route path="contactUs" element={<ContactUs /> } />
+                <Route path="login" element={<Login /> } />
             </Routes>
             <Footer2 />
         </Router>
