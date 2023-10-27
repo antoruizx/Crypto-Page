@@ -1,10 +1,32 @@
-export default function Products () {
-    return(
+import  { useState } from 'react';
+import ProductList from "../components/ProductList";
+import Cart from "../components/Cart";
+
+function Products() {
+    const [allProducts, setAllProducts] = useState([]);
+    const [total, setTotal] = useState(0);
+    const [countProducts, setCountProducts] = useState(0); 
+
+    return (
         <>
-            <main>
-                <h1>Este es el catálogo</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione cumque consequatur sint doloribus iste qui et saepe temporibus dolorem fugiat, repellendus iure esse corporis laborum. Placeat optio ut natus? Laborum?</p>
-            </main>
+            <Cart 
+                allProducts={allProducts}
+                setAllProducts={setAllProducts}
+                total={total}
+                setTotal={setTotal}
+                countProducts={countProducts}
+                setCountProducs={setCountProducts}
+            />
+            <ProductList 
+                allProducts={allProducts}
+                setAllProducts={setAllProducts}
+                total={total}
+                setTotal={setTotal}
+                countProducts={countProducts}
+                setCountProducs={setCountProducts}
+            />
         </>
     );
-};
+}
+
+export default Products;
