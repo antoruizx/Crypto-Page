@@ -1,5 +1,5 @@
 import React from 'react';
-import { dataProducts } from "../config/dataProducts";
+import { dataProducts } from "../assets/dataProducts";
 import "../index.css";
 
 const ProductList = ({allProducts, setAllProducts}) => {
