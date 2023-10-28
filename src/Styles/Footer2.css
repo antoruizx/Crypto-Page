@@ -91,6 +91,12 @@ hr {
     text-align: center;
 }
 
+.img-logo {
+    align-items: center;
+    padding: 0px, 15px;
+
+}
+
 @media screen and (max-width: 850px) {
     .sb__footer-heading h1 {
         font-size: 44px;

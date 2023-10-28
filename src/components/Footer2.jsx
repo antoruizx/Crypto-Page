@@ -1,27 +1,25 @@
 import React from "react";
 import '../Styles/Footer2.css';
-import fb from '../assets/img/fb.png';
-import twitter from '../assets/img/tw.png';
-import linkedin from '../assets/img/linkedin.png';
-
+import {GrFacebookOption} from "react-icons/gr";
+import {BiLogoTwitter} from "react-icons/bi";
+import logoReed from "../assets/img/logo-reed2.png";
+import { BiLogoLinkedin } from "react-icons/bi";
+import { BiLogoTiktok } from "react-icons/bi";
 
 const Footer = () => {
     return (
         <div className="footer">
-            <div className="sb__footer section__padding"> 
-            <div className="sb_footer-links_div">
-                        <h4>Coming soon</h4>
-                        <div className="socialmedia">
-                            <p><img src={fb}
-                                    alt="logofb"/></p>
-                            <p><img src={twitter}
-                                    alt="logotw"/></p>
-                            <p><img src={linkedin}
-                                    alt="logolk"/></p>
-                        </div>
-                    </div>
+            <div className="sb__footer section__padding">
+                <div className="sb_footer-links_div">
+
+                    <h4>
+                        <img className="img-logo"
+                            src={logoReed}
+                            alt=""/>
+                        Coming soon</h4>
+                </div>
                 <div className="sb__footer-links">
-                    
+
                     <div className="sb__footer-links_div">
                         <h4>Products</h4>
                         <a href="/products">
@@ -52,6 +50,25 @@ const Footer = () => {
                             <p>SSNN</p>
                         </a>
                     </div>
+                    <div className="sb__footer-links_div">
+                        <h4>RRSS</h4>
+                        <div className="socialmedia">
+                            <a href="https://www.facebook.com/">
+                                <GrFacebookOption/>
+                            </a>
+                            <a href="https://twitter.com/">
+                                <BiLogoTwitter />
+                            </a>
+                            <a href="https://www.linkedin.com/">
+                                <BiLogoLinkedin />
+                            </a>
+                            <a href="https://www.linkedin.com/">
+                                <BiLogoTiktok />
+                            </a>
+                            
+                        </div>
+
+                    </div>
 
                 </div>
 
@@ -62,10 +79,10 @@ const Footer = () => {
                         <p>
                             © {
                             new Date().getFullYear()
-                        } All right reserved |
-                             Nadia Antonella Ruiz - FullStack Final Project.
+                        }
+                            All right reserved |
+                                                                                                                 Nadia Antonella Ruiz - FullStack Final Project.
                         </p>
-                        {/* <img src={logo} alt="" />*/}
                     </div>
                 </div>
 
