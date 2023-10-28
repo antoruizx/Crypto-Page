@@ -9,7 +9,7 @@
     grid-template-columns: 
         repeat(
             auto-fit,
-            minmax(150px, 2fr)
+            minmax(300px, 2fr)
             );
     gap: 10px;
 

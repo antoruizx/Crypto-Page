@@ -6,7 +6,7 @@ export default function Navbar() {
     return (
         <nav className="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
             <div className="container-fluid navbar-brand">
-                <a className="navbar-brand" href="#"><img src={logo} alt="" /></a>
+                <a className="navbar-brand" href="#"><a href="/"><img src={logo} alt="" /></a></a>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
