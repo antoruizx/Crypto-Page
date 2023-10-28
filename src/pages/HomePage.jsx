@@ -8,6 +8,8 @@ import {Col, Container, Row, Card} from "react-bootstrap";
 import Card1 from '../assets/img/card1.jpg';
 import Card2 from '../assets/img/card2.jpg';
 import Card3 from '../assets/img/card3.jpg';
+import Gallery from "../components/Gallery";
+import ClientsCards from "../components/ClientsCards";
 
 
 const HomePage = () => {
@@ -18,15 +20,13 @@ const HomePage = () => {
             title: 'Personas',
             description: "lorem jdiosfjdi oojsoidjfijsdjf osof oisdofjsdf jsdfisjfiosofodfff  ddddfwerfwerf",
             link: "https://www.google.com"
-        },
-        {
-            id:2,
+        }, {
+            id: 2,
             img: 'https://images.unsplash.com/photo-1581655353564-df123a1eb820?auto=format&fit=crop&q=80&w=1287&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
             title: 'Emprendimientos',
             description: "lorem jdiosfjdi oojsoidjfijsdjf osof oisdofjsdf jsdfisjfiosofodfff  ddddfwerfwerf",
             link: "https://www.google.com"
-        },
-        {
+        }, {
             id: 1,
             img: 'https://images.unsplash.com/photo-1581655353564-df123a1eb820?auto=format&fit=crop&q=80&w=1287&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
             title: 'Empresas',
@@ -35,84 +35,88 @@ const HomePage = () => {
         },
     ]
     return (
+        <>
+            <Container fluid>
+                <Row className="justify-content-center align-items-center">
+                    <Col lg={16}>
+                        <Carousel>
+                            <Carousel.Item interval={2000}>
+                                <img className="d-block w-100"
+                                    src={Img1}
+                                    alt="First slide"/>
+                                <Carousel.Caption>
+                                    <h3>Hoodies</h3>
+                                    <p className="d-none d-sm-block">
+                                        Nulla vitae elit libero, a pharetra augue mollis interdum.
+                                    </p>
+                                </Carousel.Caption>
+                            </Carousel.Item>
+                            <Carousel.Item interval={2000}>
+                                <img className="d-block w-100"
+                                    src={Img2}
+                                    alt="Second slide"/>
 
-        <Container fluid>
-            <Row className="justify-content-center align-items-center">
-                <Col lg={16}>
-                    <Carousel>
-                        <Carousel.Item interval={2000}>
-                            <img className="d-block w-100"
-                                src={Img1}
-                                alt="First slide"/>
-                            <Carousel.Caption>
-                                <h3>Hoodies</h3>
-                                <p className="d-none d-sm-block">
-                                    Nulla vitae elit libero, a pharetra augue mollis interdum.
-                                </p>
-                            </Carousel.Caption>
-                        </Carousel.Item>
-                        <Carousel.Item interval={2000}>
-                            <img className="d-block w-100"
-                                src={Img2}
-                                alt="Second slide"/>
+                                <Carousel.Caption>
+                                    <h3>T-shirts</h3>
+                                    <p className="d-none d-sm-block">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    </p>
+                                </Carousel.Caption>
+                            </Carousel.Item>
+                            <Carousel.Item interval={2000}>
+                                <img className="d-block w-100"
+                                    src={Img4}
+                                    alt="Third slide"/>
 
-                            <Carousel.Caption>
-                                <h3>T-shirts</h3>
-                                <p className="d-none d-sm-block">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                </p>
-                            </Carousel.Caption>
-                        </Carousel.Item>
-                        <Carousel.Item interval={2000}>
-                            <img className="d-block w-100"
-                                src={Img4}
-                                alt="Third slide"/>
+                                <Carousel.Caption>
+                                    <h3>Accesories</h3>
+                                    <p className="d-none d-sm-block">
+                                        Praesent commodo cursus magna, vel scelerisque nislconstur.
+                                    </p>
+                                </Carousel.Caption>
+                            </Carousel.Item>
+                        </Carousel>
+                    </Col>
+                </Row>
 
-                            <Carousel.Caption>
-                                <h3>Accesories</h3>
-                                <p className="d-none d-sm-block">
-                                    Praesent commodo cursus magna, vel scelerisque nislconstur.
-                                </p>
-                            </Carousel.Caption>
-                        </Carousel.Item>
-                    </Carousel>
-                </Col>
-            </Row>
+                <section className="text-center">
+                    <h2 className="display-5 mt-3">Unisex style</h2>
+                    <p className="lead text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <Gallery />
 
-            <section className="text-center">
-                <h2 className="display-5 mt-3">Unisex style</h2>
-                <p className="lead text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                </p>
-            </section>
-            <hr/>
+                </section>
+                <hr/>
 
-            <section>
-            <h1 className="text-center">Ventas minoristas y mayoristas
-            </h1>
-                <Row xs={1}
-                    md={3} 
-                    className="g-4">
-                    {
-                    Array.from({length: 3}).map((dataClients, idx) => (
-                        <Col key={idx}>
-                            <Card>
-                                <Card.Img variant="top"
-                                    src={Card1}/>
-                                <Card.Body>
-                                    <Card.Title>Empresa</Card.Title>
-                                    <Card.Text>
-                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Persplaceat labore, corporis, laboriosam aperiam ratione error illo!</p>
-                                    </Card.Text>
-                                </Card.Body>
-                            </Card>
-                        </Col>
-                    ))
-                } </Row>
-            </section>
+                <section>
+                    <h1 className="text-center">Ventas minoristas y mayoristas
+                    </h1>
+                    <Row xs={1}
+                        md={3}
+                        className="g-4">
+                        {
+                        Array.from({length: 3}).map((dataClients, idx) => (
+                            <Col key={idx}>
+                                <Card>
+                                    <Card.Img variant="top"
+                                        src={Card1}/>
+                                    <Card.Body>
+                                        <Card.Title>Empresa</Card.Title>
+                                        <Card.Text>
+                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Persplaceat labore, corporis, laboriosam aperiam ratione error illo!</p>
+                                        </Card.Text>
+                                    </Card.Body>
+                                </Card>
+                            </Col>
+                        ))
+                    } </Row>
+                </section>
 
-            <hr/>
+                <hr/>
 
-        </Container>
+            </Container>
+        </>
+
 
     );
 };

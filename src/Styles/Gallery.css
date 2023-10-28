@@ -1,0 +1,16 @@
+.div-grid img {
+    width: 100%;
+    height: auto;
+    box-shadow: 0px 0px 10px rgb(55, 57, 55);
+}
+
+.div-grid {
+    display: grid;
+    grid-template-columns: 
+        repeat(
+            auto-fit,
+            minmax(150px, 2fr)
+            );
+    gap: 10px;
+
+}
