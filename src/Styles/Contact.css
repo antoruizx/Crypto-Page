@@ -28,7 +28,7 @@ form input, textarea {
 }
 
 form span {
-    color: rgb(116, 169, 37);
+    color: rgb(24, 116, 39);
 }
 
 form button {
@@ -39,6 +39,10 @@ form button {
     background-color: rgb(116, 169, 37);
     color: #fff;
     cursor: pointer;
+}
+
+.btn {
+    background: rgb(24, 116, 39);
 }
 
 .btn:hover{

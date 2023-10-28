@@ -44,7 +44,7 @@
     display: block;
 }
 .active-tab {
-    background:rgb(116, 169, 37);
+    background:rgb(24, 116, 39);
     position: relative;
 }
 .active-tab::before {
@@ -57,7 +57,7 @@
     height: 0;
     border-style: solid;
     border-width: 5px 5px 0 5px;
-    border-color: rgb(116, 169, 37) transparent transparent;
+    border-color: rgb(24, 116, 39) transparent transparent;
 }
 .active-tab h2 {
     color: white;

@@ -27,7 +27,7 @@ export default function Products() {
                                 <Card.Text>
                                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Persplaceat labore, corporis, laboriosam aperiam ratione error illo!</p>
                                 </Card.Text>
-                                <a className="btn btn-dark" href="https://api.whatsapp.com/send/?phone=3814988682&text&type=phone_number&app_absent=0" type="button" >Comprar</a>
+                                <a className="btn btn-success" href="https://api.whatsapp.com/send/?phone=3814988682&text&type=phone_number&app_absent=0" type="button" >Comprar</a>
 
                             </Card.Body>
                         </Card>
