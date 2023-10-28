@@ -24,13 +24,13 @@ const Footer = () => {
                     
                     <div className="sb__footer-links_div">
                         <h4>Products</h4>
-                        <a href="/t-shirts">
+                        <a href="/products">
                             <p>T-shits</p>
                         </a>
-                        <a href="/hoodies">
+                        <a href="/products">
                             <p>Hoodies</p>
                         </a>
-                        <a href="/accesories">
+                        <a href="/products">
                             <p>Accesories</p>
                         </a>
                     </div>
@@ -39,11 +39,11 @@ const Footer = () => {
                         <a href="/aboutus">
                             <p>About Us</p>
                         </a>
-                        <a href="/ubication">
-                            <p>Ubication</p>
+                        <a href="/contactUs">
+                            <p>Contact Us</p>
                         </a>
-                        <a href="/testimonios">
-                            <p>Testimonials</p>
+                        <a href="/login">
+                            <p>Login/Signin</p>
                         </a>
                     </div>
                     <div className="sb__footer-links_div">

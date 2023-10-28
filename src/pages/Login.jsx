@@ -1,5 +1,7 @@
 import {useState} from 'react';
 import axios from 'axios';
+import "../Styles/Login.css";
+import { BsFillArrowUpRightSquareFill } from "react-icons/bs";
 
 
 function Login() {
@@ -27,8 +29,9 @@ function Login() {
             <input type="password" name="password" id="password"/>
             
             <div>
-              <a href="/" type="button" className="btn btn-primary">Login</a>
-              <a href="/signin" type="button" className="btn btn-success">I'm new!</a>
+              <a href="/" type="button" className="btn btn-success">Login</a>
+              <hr />
+              <a href="/signin" className="register">I'm new!<BsFillArrowUpRightSquareFill/></a>
             </div>
         </form>
 

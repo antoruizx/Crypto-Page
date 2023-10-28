@@ -1,7 +1,6 @@
 .about {
     padding: 5rem 3rem 3rem 3rem;
-    background-image: url("https://images.pexels.com/photos/572487/pexels-photo-572487.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
-    width: 100%;
+    background-image: url("https://images.pexels.com/photos/572487/pexels-photo-572487.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");;
 }
 .row {
     display: flex;

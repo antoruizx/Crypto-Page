@@ -40,3 +40,15 @@ form button {
     color: #fff;
     cursor: pointer;
 }
+
+.btn:hover{
+	background: white;
+    color: black;
+}
+
+btn:hover:after,
+btn:hover:before{
+	transform: rotate(45deg), scaleX(130%);
+	background: rgb(45, 98, 37);
+	transition: all ease 0.5s;
+}
