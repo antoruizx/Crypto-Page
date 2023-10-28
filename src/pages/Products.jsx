@@ -23,7 +23,7 @@ export default function Products() {
                             <Card.Img variant="top"
                                 src={Card1}/>
                             <Card.Body>
-                                <Card.Title>Empresa</Card.Title>
+                                <Card.Title>Producto</Card.Title>
                                 <Card.Text>
                                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Persplaceat labore, corporis, laboriosam aperiam ratione error illo!</p>
                                 </Card.Text>

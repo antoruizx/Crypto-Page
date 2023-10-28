@@ -6,8 +6,6 @@ import Img2 from '../assets/img/img2.jpg';
 import Img4 from '../assets/img/img4.jpg';
 import {Col, Container, Row, Card} from "react-bootstrap";
 import Card1 from '../assets/img/card1.jpg';
-import Card2 from '../assets/img/card2.jpg';
-import Card3 from '../assets/img/card3.jpg';
 import Gallery from "../components/Gallery";
 
 
@@ -80,7 +78,7 @@ const HomePage = () => {
                                     <Card.Img variant="top"
                                         src={Card1}/>
                                     <Card.Body>
-                                        <Card.Title>Empresa</Card.Title>
+                                        <Card.Title>Business</Card.Title>
                                         <Card.Text>
                                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Persplaceat labore, corporis, laboriosam aperiam ratione error illo!</p>
                                         </Card.Text>
