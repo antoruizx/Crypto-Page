@@ -12,27 +12,7 @@ import Gallery from "../components/Gallery";
 
 
 const HomePage = () => {
-    let dataClients = [
-        {
-            id: 1,
-            img: 'https://images.unsplash.com/photo-1581655353564-df123a1eb820?auto=format&fit=crop&q=80&w=1287&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-            title: 'Personas',
-            description: "lorem jdiosfjdi oojsoidjfijsdjf osof oisdofjsdf jsdfisjfiosofodfff  ddddfwerfwerf",
-            link: "https://www.google.com"
-        }, {
-            id: 2,
-            img: 'https://images.unsplash.com/photo-1581655353564-df123a1eb820?auto=format&fit=crop&q=80&w=1287&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-            title: 'Emprendimientos',
-            description: "lorem jdiosfjdi oojsoidjfijsdjf osof oisdofjsdf jsdfisjfiosofodfff  ddddfwerfwerf",
-            link: "https://www.google.com"
-        }, {
-            id: 1,
-            img: 'https://images.unsplash.com/photo-1581655353564-df123a1eb820?auto=format&fit=crop&q=80&w=1287&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-            title: 'Empresas',
-            description: "lorem jdiosfjdi oojsoidjfijsdjf osof oisdofjsdf jsdfisjfiosofodfff  ddddfwerfwerf",
-            link: "https://www.google.com"
-        },
-    ]
+
     return (
         <>
             <Container fluid>
@@ -70,6 +50,7 @@ const HomePage = () => {
                                 <Carousel.Caption>
                                     <h3>Accesories</h3>
                                     <p className="d-none d-sm-block">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                     </p>
                                 </Carousel.Caption>
                             </Carousel.Item>
