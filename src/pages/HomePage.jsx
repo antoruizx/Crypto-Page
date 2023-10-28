@@ -9,7 +9,6 @@ import Card1 from '../assets/img/card1.jpg';
 import Card2 from '../assets/img/card2.jpg';
 import Card3 from '../assets/img/card3.jpg';
 import Gallery from "../components/Gallery";
-import ClientsCards from "../components/ClientsCards";
 
 
 const HomePage = () => {
@@ -46,7 +45,7 @@ const HomePage = () => {
                                     alt="First slide"/>
                                 <Carousel.Caption>
                                     <h3>Hoodies</h3>
-                                    <p className="d-none d-sm-block">
+                                    <p className="d-none d-sm-block color-text">
                                         Nulla vitae elit libero, a pharetra augue mollis interdum.
                                     </p>
                                 </Carousel.Caption>

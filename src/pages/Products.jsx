@@ -10,9 +10,9 @@ import "../Styles/Products.css";
 export default function Products() {
         return (
         <div>
-          <hr />
-            <h1 className="text-center">Catálogo</h1>
             <hr />
+            <hr />
+            <h1 className="text-center">Catálogo</h1>
             <Row xs={1}
                 md={3}
                 className="g-4 cards-gap">
