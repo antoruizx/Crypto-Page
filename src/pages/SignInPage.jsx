@@ -7,7 +7,20 @@ import Form from 'react-bootstrap/Form';
 const URL = "mongodb:http://127.0.0.1:27017/userSystem"
 
 function SignInPage() {
+    const getUser = async () => {
+        const users = await axios.get("http://127.0.0.1:8000/users")
+        console.log(users.data);
+    }
 
+    const login = async (form) => {
+        const user = {
+            username: form.username,
+            password: form.password
+        }
+        const login = await axios.post("http://127.0.0.1:8000/login", user)
+        console.log(login);
+    } 
+    getUser();
       
     return (
         <>

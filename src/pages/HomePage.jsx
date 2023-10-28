@@ -37,7 +37,7 @@ const HomePage = () => {
     return (
         <>
             <Container fluid>
-                <Row className="justify-content-center align-items-center">
+                <Row className="row-card justify-content-center align-items-center">
                     <Col lg={16}>
                         <Carousel>
                             <Carousel.Item interval={2000}>
@@ -79,9 +79,9 @@ const HomePage = () => {
                     </Col>
                 </Row>
 
-                <section className="text-center">
+                <section className=" text-center">
                     <h2 className="display-5 mt-3">Unisex style</h2>
-                    <p className="lead text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    <p className="row-card lead text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     </p>
                     <Gallery />
 
@@ -93,7 +93,7 @@ const HomePage = () => {
                     </h1>
                     <Row xs={1}
                         md={3}
-                        className="g-4">
+                        className="g-4 row-card">
                         {
                         Array.from({length: 3}).map((dataClients, idx) => (
                             <Col key={idx}>
@@ -105,6 +105,7 @@ const HomePage = () => {
                                         <Card.Text>
                                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Persplaceat labore, corporis, laboriosam aperiam ratione error illo!</p>
                                         </Card.Text>
+                                        <a className="btn btn-dark" href="https://api.whatsapp.com/send/?phone=3814988682&text&type=phone_number&app_absent=0" type="button" >See details</a>
                                     </Card.Body>
                                 </Card>
                             </Col>

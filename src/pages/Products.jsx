@@ -11,16 +11,15 @@ export default function Products() {
         return (
         <div>
           <hr />
-            <h1 className="text-center">Catálogo
-            </h1>
+            <h1 className="text-center">Catálogo</h1>
             <hr />
             <Row xs={1}
                 md={3}
-                className="g-4">
+                className="g-4 cards-gap">
                 {
                 Array.from({length: 9}).map((dataClients, idx) => (
-                    <Col key={idx}>
-                        <Card >
+                    <Col>
+                        <Card className='card'>
                             <Card.Img variant="top"
                                 src={Card1}/>
                             <Card.Body>
@@ -28,7 +27,7 @@ export default function Products() {
                                 <Card.Text>
                                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Persplaceat labore, corporis, laboriosam aperiam ratione error illo!</p>
                                 </Card.Text>
-                                <Button variant="dark">Comprar</Button>
+                                <a className="btn btn-dark" href="https://api.whatsapp.com/send/?phone=3814988682&text&type=phone_number&app_absent=0" type="button" >Comprar</a>
 
                             </Card.Body>
                         </Card>
