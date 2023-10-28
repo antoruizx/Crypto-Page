@@ -1,12 +1,8 @@
 import {useState} from 'react';
-import {Link} from "react-router-dom";
 import axios from 'axios';
-import Button from 'react-bootstrap/Button';
-import Form from 'react-bootstrap/Form';
+
 
 function Login() {
-    const [count, setCount] = useState(0)
-
 
     const getUser = async () => {
         const users = await axios.get("http://127.0.0.1:8000/users")

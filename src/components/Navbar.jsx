@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom";
 import "../Styles/Navbar.css";
+import logo from "../assets/img/logo-reed.png";
 
 export default function Navbar() {
     return (
         <nav className="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
             <div className="container-fluid navbar-brand">
-                <a className="navbar-brand" href="#">Reed</a>
+                <a className="navbar-brand" href="#"><img src={logo} alt="" /></a>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>

@@ -3,7 +3,6 @@ import '../Styles/Footer2.css';
 import fb from '../assets/img/fb.png';
 import twitter from '../assets/img/tw.png';
 import linkedin from '../assets/img/linkedin.png';
-import logoReed from '../assets/img/logo-reed.png';
 
 
 const Footer = () => {
@@ -66,7 +65,7 @@ const Footer = () => {
                         } All right reserved |
                              Nadia Antonella Ruiz - FullStack Final Project.
                         </p>
-
+                        {/* <img src={logo} alt="" />*/}
                     </div>
                 </div>
 
