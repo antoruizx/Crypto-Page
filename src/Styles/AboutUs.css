@@ -1,6 +1,6 @@
 .about {
     padding: 5rem 3rem 3rem 3rem;
-    background-image: url("https://images.pexels.com/photos/572487/pexels-photo-572487.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");;
+    background-image: url("https://i.pinimg.com/564x/62/03/cd/6203cd0dcf39adb94603459f73b94bd6.jpg");;
 }
 .row {
     display: flex;
@@ -38,6 +38,7 @@
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     display: none;
+    color: aliceblue;
 }
 .active-content {
     display: block;
