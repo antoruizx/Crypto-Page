@@ -1,49 +1,50 @@
-import { useEffect, useState } from "react"
+import { useState } from "react"
 import axios from "axios";
 import '../Styles/SignInPage.css';
-import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 
-const URL = "mongodb:http://127.0.0.1:27017/userSystem"
-
 function SignInPage() {
-    const getUser = async () => {
-        const users = await axios.get("http://127.0.0.1:8000/users")
-        console.log(users.data);
+
+    const [datos, setDatos] = useState({
+        username: "",
+        password: "",
+    });
+
+    const handleInputChange = (e) => {
+        let { key, value } = e.target;
+        let newDatos = {...datos, [key]: value};
+        setDatos(newDatos);
     }
 
-    const login = async (form) => {
-        const user = {
-            username: form.username,
-            password: form.password
+    const handleSubmit = async(e) =>{
+        e.preventDefault();
+        if(!e.target.checkValidity()){
+            console.log("no enviar");
+        }else {
+            let res = await axios.post("http://localhost:8000/users", datos);
+            console.log("¡Registro existoso! Bienvenidx");
         }
-        const login = await axios.post("http://127.0.0.1:8000/login", user)
-        console.log(login);
-    } 
-    getUser();
+    };
       
     return (
         <>
-        <Form>
-            <Form.Group className="mb-3" controlId="formBasicName">
-                <Form.Label name="name">Name</Form.Label>
-                <Form.Control type="name" placeholder="Enter your name"/>
-            </Form.Group>
-
+        <Form onSubmit={handleSubmit}>
             <Form.Group className="mb-3" controlId="formBasicUsername">
-                <Form.Label name="username">Username</Form.Label>
+                <Form.Label key="username" onChange={handleInputChange} value={datos.username}>Username</Form.Label>
                 <Form.Control type="text" name="username"  placeholder="Enter your username"/>
             </Form.Group>
 
             <Form.Group className="mb-3" controlId="formBasicPassword">
-                <Form.Label name="password">Password</Form.Label>
+                <Form.Label key="password" onChange={handleInputChange} value={datos.password}>Password</Form.Label>
                 <Form.Control type="password" placeholder="Enter your password"/>
             </Form.Group>
             <Form.Group className="mb-3" controlId="formBasicCheckbox">
                 <Form.Check type="checkbox" label="Remember me"/>
             </Form.Group>
             <div>
-            <a href="/signin" type="button" className="btn btn-success">Signin</a>
+            <button
+                    type="submit"
+                    className="btn btn-success">Signin</button>
             </div>
         </Form>
         </>

@@ -17,7 +17,7 @@ const AboutUsPage = () => {
                             <div className={toggleTab === 1 ? "single-tab active-tab": "single-tab"}
                             onClick={() => toggleState(1)}
                             >
-                                <h2>About</h2>
+                                <h2>About us</h2>
                             </div>
                             <div className={toggleTab === 2 ? "single-tab active-tab": "single-tab"}
                             onClick={() => toggleState(2)}>
@@ -30,7 +30,7 @@ const AboutUsPage = () => {
                         </div>
 
                         <div className="tab-content">
-                            {/* About Content */}
+                            {/* About us Content */}
                             <div className={toggleTab === 1 ? "content active-content": "content"}>
                                 <h2>Our Story</h2>
                                 <p>The idea arose with the intention of providing our customers with original clothing that was easy to manage in quantity. Retail purchases or wholesale sales can be made to businesses, SMEs and companies.</p>
@@ -38,7 +38,7 @@ const AboutUsPage = () => {
                                 <p>Being able to make unique designs come true to give you style and why not, CREATE YOUR OWN EMPIRE!</p>
                             </div>
 
-                            {/* Skills Content */}
+                            {/* Quality Content */}
 
                             <div className={toggleTab === 2 ? "content active-content": "content"}>
                                 <h2>Quality of our products</h2>

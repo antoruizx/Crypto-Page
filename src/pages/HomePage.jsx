@@ -4,9 +4,11 @@ import '../Styles/HomePage.css';
 import Img1 from '../assets/img/img1.jpg';
 import Img2 from '../assets/img/img2.jpg';
 import Img4 from '../assets/img/img4.jpg';
-import {Col, Container, Row, Card} from "react-bootstrap";
+import { Col, Container, Row, Card } from "react-bootstrap";
 import Card1 from '../assets/img/card1.jpg';
 import Gallery from "../components/Gallery";
+
+import { Link } from "react-router-dom";
 
 
 const HomePage = () => {
@@ -56,16 +58,16 @@ const HomePage = () => {
                     </Col>
                 </Row>
 
-                <section className=" text-center">
+                <Col className=" text-center">
                     <h2 className="display-5 mt-3">Unisex style</h2>
                     <p className="row-card lead text-muted">Being able to make unique designs come true to give you style and why not, CREATE YOUR OWN EMPIRE!
                     </p>
                     <Gallery />
 
-                </section>
+                </Col>
+
                 <hr/>
 
-                <section>
                     <h1 className="text-center">Ventas minoristas y mayoristas
                     </h1>
                     <Row xs={1}
@@ -82,13 +84,12 @@ const HomePage = () => {
                                         <Card.Text>
                                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Persplaceat labore, corporis, laboriosam aperiam ratione error illo!</p>
                                         </Card.Text>
-                                        <a className="btn btn-success" href="https://api.whatsapp.com/send/?phone=3814988682&text&type=phone_number&app_absent=0" type="button" >See details</a>
+                                        <Link className="btn btn-success" href="https://api.whatsapp.com/send/?phone=3814988682&text&type=phone_number&app_absent=0" type="button" >See details</Link>
                                     </Card.Body>
                                 </Card>
                             </Col>
                         ))
                     } </Row>
-                </section>
 
                 <hr/>
 

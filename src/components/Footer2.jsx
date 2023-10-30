@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import '../Styles/Footer2.css';
 import {GrFacebookOption} from "react-icons/gr";
 import {BiLogoTwitter} from "react-icons/bi";
@@ -13,58 +14,61 @@ const Footer = () => {
                 <div className="sb_footer-links_div">
 
                     <h4>
-                        <img className="img-logo"
+                    <Link to={"/#"}>
+                    <img className="img-logo"
                             src={logoReed}
                             alt=""/>
-                        Coming soon</h4>
+                        </Link>
+                    Coming soon
+                    </h4>
                 </div>
                 <div className="sb__footer-links">
 
                     <div className="sb__footer-links_div">
                         <h4>Products</h4>
-                        <a href="/products">
+                        <Link to={"/products"}>
                             <p>T-shits</p>
-                        </a>
-                        <a href="/products">
+                        </Link>
+                        <Link to={"/products"}>
                             <p>Hoodies</p>
-                        </a>
-                        <a href="/products">
+                        </Link>
+                        <Link to={"/products"}>
                             <p>Accesories</p>
-                        </a>
+                        </Link>
                     </div>
                     <div className="sb__footer-links_div">
                         <h4>About Us</h4>
-                        <a href="/aboutus">
+                        <Link to={"/aboutus"}>
                             <p>About Us</p>
-                        </a>
-                        <a href="/contactUs">
+                        </Link>
+                        <Link to={"/contactUs"}>
                             <p>Contact Us</p>
-                        </a>
-                        <a href="/login">
+                        </Link>
+                        <Link to={"/login"}>
                             <p>Login/Signin</p>
-                        </a>
+                        </Link>
                     </div>
                     <div className="sb__footer-links_div">
                         <h4>Contact</h4>
-                        <a href="/employer">
+                        <Link to={"/employer"}>
                             <p>SSNN</p>
-                        </a>
+                        </Link>
                     </div>
                     <div className="sb__footer-links_div">
                         <h4>RRSS</h4>
                         <div className="socialmedia">
-                            <a href="https://www.facebook.com/">
+                            <Link to={"https://www.facebook.com/"}>
                                 <GrFacebookOption/>
-                            </a>
-                            <a href="https://twitter.com/">
+                            </Link>
+                            <Link to={"https://twitter.com/"}>
                                 <BiLogoTwitter />
-                            </a>
-                            <a href="https://www.linkedin.com/">
+                            </Link>
+                            <Link to={"https://www.linkedin.com/"}>
                                 <BiLogoLinkedin />
-                            </a>
-                            <a href="https://www.linkedin.com/">
+                            </Link>
+                            <Link to={"https://www.linkedin.com/"}>
                                 <BiLogoTiktok />
-                            </a>
+                            </Link>
                             
                         </div>
 

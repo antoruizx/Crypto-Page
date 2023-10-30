@@ -23,7 +23,7 @@ function AppRouter () {
                 <Route path="aboutUs" element={<AboutUsPage />} />
                 <Route path="products" element={<Products />} />
                 <Route path="signin" element={<SignInPage />} />
-                <Route path="adminpanel" element={<RequireAuth isLogged={false} children={<AdminPanelPage />} />} />
+                <Route path="adminpanel" element={<RequireAuth isLogged={true} children={<AdminPanelPage />} />} />
                 <Route path="*" element={<ErrorPage />} />
                 <Route path="contactUs" element={<ContactUs /> } />
                 <Route path="login" element={<Login /> } />

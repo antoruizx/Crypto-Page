@@ -25,7 +25,7 @@ export const ContactUs = () => {
       <input type="email" name="user_email" placeholder="example@gmail.com" />
       <input type="phone" name="user_phone" placeholder="+549" />
       <textarea name="message" id="" cols="30" rows="10" placeholder="Type here..." />
-      <button className="btn btn-success" type="button">Send</button>    
+      <button className="btn btn-success" type="submit">Send</button>    
       </form>
   );
 };
